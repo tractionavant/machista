@@ -1,0 +1,78 @@
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="./css/sbsfes.css"></link>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/sbsfes.js"></script>
+</head>
+<body>
+
+	<div class="question">
+		<div class="still">
+			<div class="q_img">
+				<p class="title">現在の県庁前</p>
+				<img src="現在_県庁前_路面電車.jpg">
+			</div>
+			<div class="a_img">
+				<p class="title">路面電車</p>
+				<img src="路面電車.jpg">
+			</div>
+		</div>
+		<div id="msg">
+			<div class="oldman"><img class="desc_img" src="./img/oldman.png"></div>
+			<div class="mame">
+				<div class="arrow_box">
+					<div class="q">
+						Ｑ：昭和○○年ころ、この場所で市民の足として活躍した乗り物は？
+					</div>
+					<form action="" method="post" name="form1" id="form1">
+						<input type="radio" name="a" value="1" id="a1">
+						<label for ="a1" class="label">人力車</label>
+						<input type="radio" name="a" value="2" id="a2">
+						<label for ="a2" class="label">ロープウェイ</label>
+						<input type="radio" name="a" value="3" id="a3">
+						<label for ="a3" class="label">路面電車</label>
+						<div class="sign sign1">×</div>
+						<div class="sign sign2">×</div>
+						<div class="sign sign3">〇</div>
+						<audio id="btnsound1" preload="auto">
+							<source src="正解.mp3" type="audio/mp3">
+						</audio>
+						<audio id="btnsound2" preload="auto">
+							<source src="不正解.mp3" type="audio/mp3">
+						</audio>
+					</form>
+					<div>
+						<input type="button" class="next" value="答えを見る" id="b1" disabled="disabled" onclick="answer();"/>
+					</div>
+				</div>
+			</div>
+			<div class="turtle"><img class="title_img" src="./img/turtle.png"></div>
+		</div>
+	</div>
+	
+	<div id="movie01" class="movie">
+		<p class="title">県庁前を走る路面電車</p>
+		<video id="v01" controls>
+			<source src="路面電車.mp4">
+			<!--track id="jaTrack" src="track.vtt" kind="subtitles" srclang="ja" label="テスト" default="default"-->
+			<p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
+		</video>
+		<div class="control">
+			<span class="play_movie" onclick="head_movie('01')"><img src="img/rewind.png"></span>　
+			<span class="play_movie" onclick="play_movie('01')"><img src="img/play.png"></span>　
+			<span class="stop_movie" onclick="stop_movie('01')"><img src="img/stop.png"></span>　
+			<span class="close_movie" onclick="close_movie('01')"><img src="img/close.png"></span>　
+		</div>
+		<div id="msg">
+			<div class="oldman"><img class="desc_img" src="./img/oldman.png"></div>
+			<div class="mame">
+				<div class="arrow_box" id="telop01">ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション　ナレーション</div>
+			</div>
+			<div class="turtle"><img class="title_img" src="./img/turtle.png"></div>
+		</div>
+	</div>
+	
+</body>
+</html>
+		
